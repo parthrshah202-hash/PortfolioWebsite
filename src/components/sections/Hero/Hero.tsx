@@ -31,8 +31,8 @@ export default function Hero() {
           {/* Left Text Block */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl w-full">
             {/* Status Line */}
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
+            <div className="inline-flex items-start gap-2 mb-4 text-left max-w-full">
+              <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse mt-1 shrink-0" />
               <span className="font-sans text-meta text-text-secondary">
                 {siteConfig.statusLine}
               </span>
@@ -54,8 +54,8 @@ export default function Hero() {
               <Typewriter
                 words={[
                   siteConfig.tagline,
-                  "Building real-world data systems.",
-                  "Turning logs into insights.",
+                  "From messy logs to meaningful intelligence — end to end.",
+                  "ML models, data systems, and the infra that makes them fly.",
                 ]}
                 loop={true}
                 cursor
@@ -67,32 +67,33 @@ export default function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-3 items-center justify-center lg:justify-start w-full">
-              <LinkButton href="#projects" variant="primary">
+            <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-center lg:justify-start w-full max-w-sm sm:max-w-none mx-auto lg:mx-0">
+              <LinkButton href="#projects" variant="primary" className="w-full sm:w-auto">
                 View Projects
               </LinkButton>
               <LinkButton
                 href="/resume/Parth_Shah_Resume.pdf"
                 variant="primary"
+                className="w-full sm:w-auto"
               >
                 Download Resume
               </LinkButton>
-              <LinkButton href="#contact" variant="subtle">
-                Get in Touch
+              <LinkButton href="#contact" variant="subtle" className="w-full sm:w-auto py-2">
+                Let&apos;s Talk
               </LinkButton>
             </div>
           </div>
 
           {/* Profile Photo Wrapper */}
-          <div className="flex justify-center items-center w-full mt-6 lg:mt-0">
-            <div className="relative">
+          <div className="flex justify-center items-center w-full mt-6 lg:mt-0 max-w-full">
+            <div className="relative max-w-full">
               <div className="absolute -inset-6 bg-gradient-to-br from-accent via-purple-500 to-pink-500 rounded-[3rem] opacity-20 blur-3xl" />
               <Image
                 src="/profile.png"
                 alt="Parth Shah"
                 width={280}
                 height={280}
-                className="relative z-10 w-64 h-64 sm:w-72 sm:h-72 rounded-3xl object-cover border-8 border-background shadow-2xl hover:scale-105 transition-transform duration-500"
+                className="relative z-10 w-48 h-48 min-[380px]:w-64 min-[380px]:h-64 sm:w-72 sm:h-72 rounded-3xl object-cover border-8 border-background shadow-2xl hover:scale-105 transition-transform duration-500 max-w-full"
                 priority
               />
             </div>

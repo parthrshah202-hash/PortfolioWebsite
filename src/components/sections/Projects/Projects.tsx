@@ -8,7 +8,7 @@ import ProjectEntry from './ProjectEntry';
 export default function Projects() {
   return (
     <FadeInSection>
-      <section id="projects" className="py-12 lg:py-16 bg-background">
+      <section id="projects" className="py-12 md:py-16 bg-background">
         <PageContainer className="flex flex-col gap-8">
           <SectionHeading
             title="Projects"

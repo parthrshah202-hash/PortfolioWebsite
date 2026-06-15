@@ -22,12 +22,14 @@ export default function Navbar() {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
     
-    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-      setIsDarkMode(true);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsDarkMode(isDark);
+    
+    if (isDark) {
       document.documentElement.classList.add('dark-mode');
     } else {
-      setIsDarkMode(false);
       document.documentElement.classList.remove('dark-mode');
     }
   }, []);
@@ -112,7 +114,7 @@ export default function Navbar() {
             {/* Dark Mode Button */}
             <button
               onClick={toggleDarkMode}
-              className="w-8 h-8 rounded-full border border-border bg-surface text-text-secondary hover:text-accent hover:border-accent flex items-center justify-center transition-all duration-150"
+              className="w-10 h-10 rounded-full border border-border bg-surface text-text-secondary hover:text-accent hover:border-accent flex items-center justify-center transition-all duration-150"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
@@ -130,7 +132,7 @@ export default function Navbar() {
             {/* Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="w-8 h-8 flex flex-col items-center justify-center gap-1.2 border border-border rounded bg-surface hover:border-accent transition-colors duration-150 relative cursor-pointer"
+              className="w-10 h-10 flex flex-col items-center justify-center gap-1.2 border border-border rounded bg-surface hover:border-accent transition-colors duration-150 relative cursor-pointer"
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >
@@ -163,7 +165,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="font-sans text-nav font-medium text-text-secondary hover:text-accent py-1.5 transition-colors duration-150 border-b border-border/10 last:border-b-0"
+                className="font-sans text-nav font-medium text-text-secondary hover:text-accent py-2.5 transition-colors duration-150 border-b border-border/10 last:border-b-0"
               >
                 {link.label}
               </a>

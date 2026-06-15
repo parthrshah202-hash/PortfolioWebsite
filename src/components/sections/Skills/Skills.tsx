@@ -8,7 +8,7 @@ import SkillGroup from './SkillGroup';
 export default function Skills() {
   return (
     <FadeInSection>
-      <section id="skills" className="py-12 lg:py-16 bg-background">
+      <section id="skills" className="py-12 md:py-16 bg-background">
         <PageContainer className="flex flex-col gap-8">
           <SectionHeading
             title="Skills"

@@ -9,7 +9,7 @@ import PageContainer from '@/components/layout/PageContainer';
 export default function Contact() {
   return (
     <FadeInSection>
-      <section id="contact" className="py-20 lg:py-28 bg-background border-t border-border/45">
+      <section id="contact" className="py-12 md:py-16 lg:py-28 bg-background border-t border-border/45">
         <PageContainer className="flex flex-col items-center text-center gap-10">
           {/* Section Heading */}
           <SectionHeading

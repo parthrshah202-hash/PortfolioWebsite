@@ -65,7 +65,7 @@ export default function AchievementEntry({ item, isLeft, isLast = false }: Achie
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        className="absolute top-6 left-7 md:left-1/2 -translate-x-1/2 z-20 flex items-center justify-center"
+        className="absolute top-6 left-5 md:left-1/2 -translate-x-1/2 z-20 flex items-center justify-center"
       >
         <div className="w-5 h-5 rounded-full border-4 border-accent bg-background shadow-md flex items-center justify-center relative">
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
@@ -79,14 +79,14 @@ export default function AchievementEntry({ item, isLeft, isLast = false }: Achie
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
-        className={`w-full pl-14 md:pl-0 flex ${
+        className={`w-full pl-10 md:pl-0 flex ${
           isLeft
             ? 'md:w-[calc(50%-2.5rem)] md:mr-auto justify-end'
             : 'md:w-[calc(50%-2.5rem)] md:ml-auto justify-start'
         }`}
       >
         {/* Actual Card */}
-        <div className="w-full max-w-xl p-5 md:p-6 rounded-2xl bg-surface/30 border border-border hover:border-accent/40 hover:bg-surface hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex items-start gap-4 text-left group">
+        <div className="w-full max-w-xl p-5 md:p-6 rounded-2xl bg-surface/30 border border-border hover:border-accent/40 hover:bg-surface hover:shadow-hover hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row items-start gap-3 sm:gap-4 text-left group">
           {/* Decorative Icon */}
           <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-accent-tint text-accent shrink-0 group-hover:scale-105 transition-transform duration-300">
             <IconComponent className="w-5 h-5" />

@@ -7,7 +7,7 @@ import PageContainer from '@/components/layout/PageContainer';
 export default function About() {
   return (
     <FadeInSection>
-      <section id="about" className="pt-12 lg:pt-16 pb-24 bg-background">
+      <section id="about" className="pt-12 md:pt-16 pb-16 md:pb-24 bg-background">
         <PageContainer className="flex flex-col gap-6">
           <SectionHeading title="About" />
           <p className="font-sans text-body text-text-secondary leading-relaxed max-w-[65ch]">

@@ -110,14 +110,14 @@ export default function ProjectEntry({ project }: ProjectEntryProps) {
 
           {/* Links Row */}
           {hasLinks && (
-            <div className="flex flex-wrap gap-4 mt-2">
+            <div className="flex flex-col sm:flex-row gap-3 mt-2 items-stretch sm:items-center">
               {project.links.repo && (
-                <LinkButton href={project.links.repo} variant="subtle">
+                <LinkButton href={project.links.repo} variant="subtle" className="w-full sm:w-auto py-2">
                   View on GitHub
                 </LinkButton>
               )}
               {project.links.demo && (
-                <LinkButton href={project.links.demo} variant="primary">
+                <LinkButton href={project.links.demo} variant="primary" className="w-full sm:w-auto">
                   Try the Demo
                 </LinkButton>
               )}

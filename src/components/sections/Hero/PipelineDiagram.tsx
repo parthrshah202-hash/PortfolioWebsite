@@ -142,7 +142,7 @@ export default function PipelineDiagram({ className = '' }: PipelineDiagramProps
 
             {/* Connecting Lines */}
             {!isLast && (
-              <div className="flex items-center justify-center w-12 h-8 md:h-auto flex-shrink-0">
+              <div className="flex items-center justify-center w-12 h-10 md:h-auto flex-shrink-0">
                 {/* Horizontal flow arrow on desktop */}
                 <svg
                   className="w-full h-8 hidden md:block"

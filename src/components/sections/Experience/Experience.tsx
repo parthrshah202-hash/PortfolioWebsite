@@ -8,7 +8,7 @@ import ExperienceEntry from './ExperienceEntry';
 export default function Experience() {
   return (
     <FadeInSection>
-      <section id="experience" className="py-12 lg:py-16 bg-background">
+      <section id="experience" className="py-12 md:py-16 bg-background">
         <PageContainer className="flex flex-col gap-8">
           <SectionHeading title="Experience & Education" />
           <div className="flex flex-col gap-6">
