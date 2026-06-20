@@ -14,6 +14,8 @@ export const skills: SkillGroup[] = [
       "Embeddings & Vector Databases",
       "LLM Applications",
       "Data Analytics",
+      "Semantic Search",
+      "Sentence Transformers"
     ],
   },
   {

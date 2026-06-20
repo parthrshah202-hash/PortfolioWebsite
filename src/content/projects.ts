@@ -15,13 +15,13 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "universal-data-ingestion",
-    title: "Universal Data Ingestion",
+    id: "FinFlow",
+    title: "FinFlow",
     timeframe: "2026 – Present",
     status: "in-progress",
-    stack: ["Python", "LLMs", "RAG", "Vector Databases", "Embeddings"],
+    stack: ["Python", "Sentence Transformers", "PGvector", "FASTAPI", "Sematic Search", "Streamlit", "POSTGRESQL"],
     description:
-      "Tackles the messiest part of data engineering — unstructured input. Classifies and normalizes PDFs, spreadsheets, and UPI exports using ML-driven document classification and dynamic column mapping, with a containerized, cloud-deployed architecture and versioned PostgreSQL schemas built for scale.",
+      "Aims to solve a real pain point for CA firms — financial exports from banks, UPI platforms, and brokers all use different schemas. FinFlow ingests PDFs, CSVs, and text exports, then uses sentence transformer embeddings to semantically map unknown column names to a canonical schema — targeting generalization to unseen bank formats without manual configuration. Built with pgvector for embedding storage, confidence scoring to flag uncertain mappings, and a Streamlit dashboard for review and CSV export.",
     links: {},
   },
   {
