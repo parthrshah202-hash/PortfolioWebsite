@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Parth Shah — Portfolio Website
 
-## Getting Started
+Personal portfolio site for Parth Shah — AI Engineer & Data Systems Builder. Built to showcase projects, skills, experience, and achievements in AI, data engineering, and backend systems.
 
-First, run the development server:
+**🔗 Live site:** [portfolio-website-liard-seven-68.vercel.app](https://portfolio-website-liard-seven-68.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Overview
+
+A single-page, section-based portfolio (`About → Skills → Projects → Experience → Achievements → Contact`) with smooth scroll navigation, animated transitions, and a resume download. Deployed on Vercel.
+
+## Tech Stack
+
+| Category | Tech |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router) |
+| UI Library | [React 19](https://react.dev) |
+| Styling | [Tailwind CSS 4](https://tailwindcss.com) |
+| Animation | [Framer Motion](https://www.framer.com/motion/) |
+| Icons | [lucide-react](https://lucide.dev), [Simple Icons](https://simpleicons.org) (via CDN) |
+| Typewriter effect | [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter) |
+| Language | TypeScript |
+| Linting | ESLint (`eslint-config-next`) |
+| Deployment | Vercel |
+
+## Features
+
+- **Hero section** with animated role/tagline and quick links to Projects, Resume, and Contact
+- **About** — short intro on background and focus areas
+- **Skills** — grouped by Programming Languages, AI & ML, Backend & Data Engineering, and Tools & Platforms, each with brand icons
+- **Projects** — cards for shipped and in-progress work (Auto Schema Pipeline, FinFlow, Confidence Detection for LLMs, AI Coding Mentor, Log Data Pipeline), each with tech tags and links to GitHub / live demos
+- **Experience & Education** — timeline of roles, clubs, and academic milestones
+- **Achievements & Certifications** — competitions, certifications, and platform ratings
+- **Contact** — direct email, GitHub, and LinkedIn links
+- Downloadable resume (PDF) from the hero section
+- Fully responsive, optimized images via `next/image`
+
+## Project Structure
+
+```
+PortfolioWebsite/
+├── public/
+│   ├── images/          # project screenshots, profile picture, OG image
+│   └── resume/           # resume PDF
+├── src/
+│   └── app/               # Next.js App Router pages, layout, and components
+├── AGENTS.md              # notes for AI coding agents working on this repo
+├── CLAUDE.md               # notes for Claude Code sessions on this repo
+├── next.config.ts
+├── tailwind.config.ts
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why This Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js (App Router)** for file-based routing, image optimization, and Vercel's zero-config deployment
+- **Tailwind CSS 4** for fast, consistent styling without a separate design system
+- **Framer Motion** for section reveal animations and the hero typewriter effect
+- **TypeScript** throughout for type safety across components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+Deployed on [Vercel](https://vercel.com), auto-deploying from the `main` branch on every push.
 
-To learn more about Next.js, take a look at the following resources:
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Parth Shah**
+- Email: [parthrshah202@gmail.com](mailto:parthrshah202@gmail.com)
+- GitHub: [@parthrshah202-hash](https://github.com/parthrshah202-hash)
+- LinkedIn: [parth-shah-26154a372](https://www.linkedin.com/in/parth-shah-26154a372/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<sub>© 2026 Parth Shah. Built with Next.js, React, and Tailwind CSS.</sub>
