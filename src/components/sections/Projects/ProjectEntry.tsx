@@ -49,6 +49,7 @@ const SCREENSHOT_MAP: Record<string, string> = {
   'auto-schema-pipeline': '/images/projects/auto-schema-dashboard.png',
   'log-data-pipeline': '/images/projects/logdata-dashboard.png',
   'ai-coding-mentor': '/images/projects/coding-mentor-dashboard.png',
+  'synapsesync': '/images/projects/synapse-sync-dashboard.png',
 };
 
 export default function ProjectEntry({ project }: ProjectEntryProps) {

@@ -15,24 +15,17 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "FinFlow",
-    title: "FinFlow",
+    id: "synapsesync",
+    title: "SynapseSync",
     timeframe: "2026 – Present",
-    status: "in-progress",
-    stack: ["Python", "Sentence Transformers", "PGvector", "FASTAPI", "Sematic Search", "Streamlit", "POSTGRESQL"],
+    status: "live",
+    stack: ["Python", "Gemini", "Notion API", "Google Drive API", "GitHub Actions"],
     description:
-      "Aims to solve a real pain point for CA firms — financial exports from banks, UPI platforms, and brokers all use different schemas. FinFlow ingests PDFs, CSVs, and text exports, then uses sentence transformer embeddings to semantically map unknown column names to a canonical schema — targeting generalization to unseen bank formats without manual configuration. Built with pgvector for embedding storage, confidence scoring to flag uncertain mappings, and a Streamlit dashboard for review and CSV export.",
-    links: {},
-  },
-  {
-    id: "confidence-detection-llms",
-    title: "Confidence Detection for LLMs",
-    timeframe: "2025 – Present",
-    status: "research",
-    stack: ["Python", "Machine Learning", "NLP", "LLM Evaluation"],
-    description:
-      "LLMs don't know what they don't know — this project aims to fix that. A research system that estimates response confidence in large language models, flagging uncertain or likely-incorrect outputs before they reach the user, making AI systems more trustworthy and production-safe.",
-    links: {},
+      "An agentic pipeline that turns technical practice notes into structured Notion tracker entries automatically. Flow: Claude/Google Drive → classify & extract → validate → agent decision → multi-layer guardrails (contract validation, duplicate/collision checks, allowlist) → Notion. Anything ambiguous is safely halted and sent to a review queue instead of writing blindly.",
+    links: {
+      repo: "https://github.com/parthrshah202-hash/SynapseSync",
+      demo: "https://synapssync.streamlit.app/",
+    },
   },
   {
     id: "ai-coding-mentor",
@@ -59,5 +52,25 @@ export const projects: Project[] = [
       repo: "https://github.com/parthrshah202-hash/log-data-pipeline",
       demo: "https://log-data-pipeline-3aicicf8mzcz2k2e2k4uch.streamlit.app/",
     },
+  },
+  {
+    id: "FinFlow",
+    title: "FinFlow",
+    timeframe: "2026 – Present",
+    status: "in-progress",
+    stack: ["Python", "Sentence Transformers", "PGvector", "FASTAPI", "Sematic Search", "Streamlit", "POSTGRESQL"],
+    description:
+      "Aims to solve a real pain point for CA firms — financial exports from banks, UPI platforms, and brokers all use different schemas. FinFlow ingests PDFs, CSVs, and text exports, then uses sentence transformer embeddings to semantically map unknown column names to a canonical schema — targeting generalization to unseen bank formats without manual configuration. Built with pgvector for embedding storage, confidence scoring to flag uncertain mappings, and a Streamlit dashboard for review and CSV export.",
+    links: {},
+  },
+  {
+    id: "confidence-detection-llms",
+    title: "Confidence Detection for LLMs",
+    timeframe: "2025 – Present",
+    status: "research",
+    stack: ["Python", "Machine Learning", "NLP", "LLM Evaluation"],
+    description:
+      "LLMs don't know what they don't know — this project aims to fix that. A research system that estimates response confidence in large language models, flagging uncertain or likely-incorrect outputs before they reach the user, making AI systems more trustworthy and production-safe.",
+    links: {},
   },
 ];
